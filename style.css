@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    margin: 30px 0;
+}
+.song-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.song-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.song-poster {
+    max-width: 100%;
+    height: auto;
+}
+
+.song-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.singer {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+}
+
+#player {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    margin: 0;
+}
+
+#relativeVideo {
+    max-height: 410px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Add a vertical scrollbar when content exceeds the height */
+    border: 1px solid #ccc; /* Optional: Add a border for clarity */
+    padding: 10px; /* Optional: Add padding for better visual appearance */
+}
+
+#relativeVideo div {
+    padding: 10px 0;
+    margin: 10px 0;
+    background-color: #abe5ff;
+    transition: color 0.3s ease; /* Add a smooth color transition effect */
+}
+
+#relativeVideo div:hover {
+    color: rgb(255, 255, 255); /* Change text color on hover */
+    background-color: #003f5c;
+    cursor: pointer;
+}
+#relativeVideo p {
+    padding: 0 10px;
+}
+#relativeVideo .active {
+    color: rgb(255, 255, 255); /* Change text color on hover */
+    background-color: #003f5c;
+}
+#relativeVideo span {
+    margin-right: 10px;
+}
+#playlist-nav {
+    cursor: pointer;
+}
+nav {
+    background-color: #cefff8;
+}
+nav li {
+    font-weight: bold;
+}
+
+#pagination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #data-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #data-list li {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  #pagination-buttons {
+    margin-top: 20px;
+  }
+  
+  #prev-button,
+  #next-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #prev-button:disabled,
+  #next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
